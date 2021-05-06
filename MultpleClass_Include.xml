@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Include_DisableMethods.Include_Exclude1">
+      <methods>
+      <include name="sample2"/>
+      <include name="sample3"/>
+      </methods>
+      </class>
+      
+       <class name="Include_DisableMethods.Include_Exclude2">
+       <methods>
+       <include name="sample13"/>
+       </methods>
+       </class>
+       
+       <class name="Include_DisableMethods.Include_Exclude3">
+        <methods>
+        <include name="sample22"/>
+        <include name="sample23"/>
+       
+        </methods>
+       </class>
+	 </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
